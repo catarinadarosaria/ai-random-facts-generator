@@ -4,20 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="src/style.css" />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <title>AI Random Fact Generator</title>
   </head>
   <body>
+    <div class="container">
     <header>
       <h1>AI Random Fact Generator</h1>
       <h3> Interesting random facts for your daily dose of knowledge</h2>
     </header>
     <main>
-        <form>
-            <input type="text" placeholder="Type a word..." autofocus required autocomplete="off">
-        <input type="submit">
+        <form id="fact-form">
+            <input type="text" placeholder="Type a word..." id="instructions" autofocus required autocomplete="off">
+        <input type="submit" id="submit-button">
         </form>
-        <div>The shortest war in history was between Britain and Zanzibar on August 27, 1896. Zanzibar surrendered after 38 minutes.</div>
-    </main>
+        <div id="fact"></div>
+    </main></div>
     <footer>
       <a
         class="gitLink"
@@ -26,7 +28,7 @@
         >Open-source code by</a
       >
       <a class="myWebsite" href="https://catarinarosaria.com/" target="_blank">
-        <em> Catarina da Rosária</em></a
+        Catarina da Rosária</a
       >
       <a href="https://ai-random-facts-generator.netlify.app" target="_blank"
         >hosted on Netlify</a
