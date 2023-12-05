@@ -15,26 +15,31 @@
       <h3> Interesting random facts for your daily dose of knowledge</h2>
     </header>
     <main>
+        <div class="form-container">
         <form id="fact-form">
             <input type="text" placeholder="Type a word..." id="instructions" autofocus required autocomplete="off">
         <input type="submit" id="submit-button">
         </form>
-        <div id="fact"></div>
-    </main></div>
+        <div class="hint">i.e: Fire, Pillow, Cats</div>
+        </div>
+        <div id="fact" class="hidden"></div>
+    </main>
     <footer>
+        Coded by
+        <a class="myWebsite" href="https://catarinarosaria.com/" target="_blank">
+        Catarina da Rosária</a
+      >, open-sourced on 
       <a
         class="gitLink"
         href="https://github.com/catarinadarosaria/ai-random-facts-generator"
         target="_blank"
-        >Open-source code by</a
+        >Github</a
       >
-      <a class="myWebsite" href="https://catarinarosaria.com/" target="_blank">
-        Catarina da Rosária</a
-      >
+      and hosted on
       <a href="https://ai-random-facts-generator.netlify.app" target="_blank"
-        >hosted on Netlify</a
+        >Netlify</a
       >
-    </footer>
+    </footer></div>
     <script src="src/index.js"></script>
   </body>
 </html>
